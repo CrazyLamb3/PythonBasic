@@ -36,7 +36,7 @@ def make_dir():
     if not dir_name:
         print("Необходимо указать имя директории вторым параметром")
         return
-    dir_path = os.path.join(os.path.abspath(os.getcwd()), dir_name)
+    dir_path = os.path.abspath(dir_name)
     try:
         os.mkdir(dir_path)
         print('директория {} создана'.format(dir_name))
@@ -79,8 +79,9 @@ def cd():
     if os.path.exists(dir) == False:
         print('Вы ввели несуществующую директорию')
         return
+    dir_new = os.chdir(dir)
     print('Новая директория: {}'.format(os.path.abspath(cd_name)))
-    print('Текущая директория скрипта{}'.format(os.path.abspath(os.getcwd())))
+    print('Новая текущая директория скрипта: {} '.format(os.path.abspath(os.getcwd())))
 
 
 def ls():

@@ -25,7 +25,7 @@ def go_to_folder(folder):
 def create_folder(folder):
     if os.path.isdir(folder) == False:
         os.mkdir(folder)
-        return 'Папка была создана:{}'.format(folder)
+        return 'Папка была создана: {}'.format(folder)
     elif os.path.isdir(folder) == True:
         return 'Папка с именем {} уже существует'.format(folder)
 
