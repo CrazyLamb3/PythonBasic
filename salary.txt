@@ -1,0 +1,5 @@
+Dima - 5000
+Vasya - 100000
+Ivan - 1000000
+Roman - 3000
+Sergey - 2000000
